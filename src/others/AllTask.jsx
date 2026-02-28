@@ -1,6 +1,5 @@
 import { getLocalStorage } from "../utils/localStorage";
 
-
 function AllTask() {
   const { employees } = getLocalStorage();
 
