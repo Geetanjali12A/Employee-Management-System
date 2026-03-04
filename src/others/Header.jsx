@@ -2,10 +2,10 @@ import { useContext } from "react";
 import { AuthContext } from "../context/AuthProvider";
 
 function Header({ name }) {
-  const { setUser } = useContext(AuthContext); // ✅ access context
+  const { setUser } = useContext(AuthContext);
 
   const logoutHandler = () => {
-    setUser(null); // ✅ logout
+    setUser(null); 
   };
 
   return (

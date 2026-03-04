@@ -2,14 +2,14 @@ import { useState, useContext } from "react";
 import { AuthContext } from "../../context/AuthProvider";
 
 function Login() {
-  const { login } = useContext(AuthContext); // ✅ THIS IS REQUIRED
+  const { login } = useContext(AuthContext); 
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   const submitHandler = (e) => {
     e.preventDefault();
-    login(email, password); // ✅ updates user in context
+    login(email, password);
   };
 
   return (

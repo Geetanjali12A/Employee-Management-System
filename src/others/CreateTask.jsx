@@ -39,7 +39,7 @@ function CreateTask() {
 
     localStorage.setItem("employees", JSON.stringify(updatedEmployees));
 
-    // If assigned employee is logged in → update context instantly
+    
     if (user?.role === "employee") {
       const updatedUser = updatedEmployees.find(
         (emp) => emp.email === user.email

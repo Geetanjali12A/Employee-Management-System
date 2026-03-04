@@ -5,7 +5,7 @@ import CreateTask from "../../others/CreateTask";
 import Header from "../../others/Header";
 
 function AdminDashBoard() {
-  const { user } = useContext(AuthContext); // ✅ THIS WAS MISSING
+  const { user } = useContext(AuthContext); 
 
   return (
     <div className="h-screen w-full p-7">
